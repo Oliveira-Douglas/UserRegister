@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar QR Code</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="text" id="cpf" placeholder="CPF" required>
+        <input type="text" id="notebook" placeholder="Notebook" required>
+        <input type="text" id="celular" placeholder="Celular" required>
+        <button onclick="addPerson()">Gerar QR Code</button>
+
+        <div id="qrcodeDisplay"></div>
+        <textarea id="qrStringOutput" readonly></textarea>
+        <button onclick="copyQRCode()">Copiar QR Code</button>
+        <button onclick="openSecondScreen()">Abrir Leitor de QR Code</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
